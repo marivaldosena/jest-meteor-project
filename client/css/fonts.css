@@ -1,0 +1,83 @@
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.semi-light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.heavy {
+    font-weight: 900;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    color: #ec4a4d;
+}
+
+.blue {
+    color: #2495d0;
+}
+
+.green {
+    color: #52b859;
+}
+
+.yellow {
+    color: #f7cb9b;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 3000px) {
+
+}
+
+@media (max-height: 800px) {
+    
+}
