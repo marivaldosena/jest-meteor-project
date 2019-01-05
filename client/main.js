@@ -8,6 +8,7 @@ import './html/signup.html'
 import './html/profile.html'
 import './html/rankings.html'
 import './html/search.html'
+import './html/jokeForm.html'
 
 import './js/signup'
 import './js/siderbar'
