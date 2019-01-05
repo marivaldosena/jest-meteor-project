@@ -8,6 +8,15 @@ import { trimInput, isNotEmpty, isEmail, isValidPassword }
     from '../../lib/methods/validation'
 
 Template.login.rendered = function() {
+    const inactiveLinks = [
+        '#jokes-link',
+        '#rankings-link',
+        '#search-link',
+        '#profile-link'
+    ]
+
+    $('#login-link').addClass('selected')
+    inactiveLinks.forEach(link => $(link).removeClass('selected'))
 }
 
 Template.login.events({
