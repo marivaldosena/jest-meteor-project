@@ -3,10 +3,14 @@
         <img src="logo.png" alt="Logo" class="icon">
         <a href="#" class="company-logo">JEST</a>
         <div class="sidebar-links">
-            <a href="#" class="link-red" id="profile-link">
-                <i class="fa fa-user"></i>
-                Profile
-            </a>
+            {{#if currentUser}}
+                <a href="/profile" class="link-red" id="profile-link">
+                    <i class="fa fa-user"></i>
+                    Profile
+                </a>
+            {{else}}
+            {{/if}}
+            
             <a href="#" class="link-blue" id="jokes-link">
                 <i class="fa fa-comments-o"></i>
                 Comments
@@ -19,6 +23,18 @@
                 <i class="fa fa-search"></i>
                 Search
             </a>
+
+            {{#if currentUser}}
+                <a href="#" class="link-purple logout" id="logout-link">
+                    <i class="fa fa-sign-out"></i>
+                    Logout
+                </a>
+            {{else}}
+                <a href="/" id="login-link">
+                    <i class="fa fa-sign-in"></i>
+                    Login
+                </a>
+            {{/if}}
         </div>
     </aside>
 </template>
