@@ -1,3 +1,5 @@
+import { Jokes } from '../../lib/collections/collections'
+
 Template.profile.rendered = function() {
     const inactiveLinks = [
         '#jokes-link',
@@ -29,5 +31,21 @@ Template.profile.helpers({
         } else {
             return Meteor.user().username
         }
+    },
+
+    userJokes() {
+        const username = Meteor.user().username
+        const userId = Meteor.userId()
+        const userJokes = Jokes.find({ userId },
+            { sort: { createdAt: -1 }})
+
+        return userJokes
+    }
+})
+
+Template.profile.events({
+    'click #delete-joke'() {
+        Meteor.call('jokes.remove', this)
+        Bert.alert('Your joke was deleted', 'success', 'growl-top-right')
     }
 })
