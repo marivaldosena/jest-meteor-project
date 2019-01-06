@@ -47,6 +47,7 @@
     color: #bcbcbc;
     font-size: 18px;
     line-height: 1.8;
+    word-wrap: break-word;
 }
 
 .smiley {

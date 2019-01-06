@@ -17,3 +17,6 @@ import './js/profile'
 import './js/jokes'
 import './js/rankings'
 import './js/search'
+import './js/jokeForm'
+
+import '../lib/sub'
